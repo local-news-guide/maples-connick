@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-header__inner {
   max-width: 1400px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 16px 24px;
+  padding: 10px 24px;
 }
 .mc-header__logo {
   font-family: var(--mc-font-heading);
@@ -100,8 +100,30 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   color: var(--mc-slate);
   letter-spacing: 0.02em;
   white-space: nowrap;
+  display: flex; align-items: center;
 }
+.mc-header__logo img { height: 36px; width: auto; max-width: 180px; }
 .mc-header__logo span { color: var(--mc-gold); }
+
+/* Services dropdown */
+.mc-nav__dropdown { position: relative; }
+.mc-nav__dropdown-toggle { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.mc-nav__dropdown-toggle .mc-icon { width: 12px; height: 12px; transition: transform 0.2s; }
+.mc-nav__dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 0; z-index: 1100;
+  min-width: 260px; padding: 8px 0;
+  background: var(--mc-white); border-radius: var(--mc-radius-md);
+  box-shadow: var(--mc-shadow-lg); border: 1px solid var(--mc-gray-200);
+}
+.mc-nav__dropdown:hover .mc-nav__dropdown-menu,
+.mc-nav__dropdown:focus-within .mc-nav__dropdown-menu { display: block; }
+.mc-nav__dropdown:hover .mc-nav__dropdown-toggle .mc-icon { transform: rotate(180deg); }
+.mc-nav__dropdown-menu a {
+  display: block; padding: 8px 20px; font-size: 14px;
+  color: var(--mc-gray-600); border-radius: 0; border-bottom: none;
+}
+.mc-nav__dropdown-menu a:hover { background: var(--mc-gold-light); color: var(--mc-slate); }
+.mc-nav__dropdown-divider { height: 1px; margin: 4px 12px; background: var(--mc-gray-200); }
 
 /* Nav */
 .mc-nav { display: flex; align-items: center; gap: 8px; }
@@ -160,6 +182,14 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   .mc-nav--open { transform: translateX(0) !important; }
   .mc-nav a { padding: 14px 16px; font-size: 17px; border-bottom: 1px solid var(--mc-gray-100); }
   .mc-nav__cta { margin-top: 16px; text-align: center; border-bottom: none !important; border-radius: var(--mc-radius-sm) !important; }
+  .mc-header__inner { padding: 8px 16px; }
+  .mc-header__logo img { height: 30px; }
+  .mc-nav__dropdown-menu {
+    position: static; box-shadow: none; border: none; border-radius: 0;
+    padding: 0; display: none; background: var(--mc-gray-50);
+  }
+  .mc-nav__dropdown.mc-nav__dropdown--open .mc-nav__dropdown-menu { display: block; }
+  .mc-nav__dropdown-menu a { padding: 10px 32px; font-size: 15px; border-bottom: 1px solid var(--mc-gray-100); }
 }
 
 /* ── Hero ──────────────────────────────────────────────────────── */
@@ -659,10 +689,15 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-attorney-card__photo-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ── Office Card Photo ─────────────────────────────────────────── */
-.mc-office-card__photo { width: 100%; height: 180px; object-fit: cover; border-radius: var(--mc-radius-md); margin-bottom: 16px; }
+/* mc-office-card__photo as <img> */
+img.mc-office-card__photo { width: 100%; height: 180px; object-fit: cover; border-radius: var(--mc-radius-md); margin-bottom: 16px; }
+/* mc-office-card__photo as <figure> wrapper */
+figure.mc-office-card__photo { margin: 0 0 16px; }
+figure.mc-office-card__photo img { width: 100%; height: auto; border-radius: var(--mc-radius-md); object-fit: cover; }
+figure.mc-office-card__photo figcaption { font-size: 13px; color: var(--mc-gray-500); margin-top: 6px; }
 
 /* ── Footer Logo ───────────────────────────────────────────────── */
-.mc-footer__logo-img { height: 40px; width: auto; margin-bottom: 12px; }
+.mc-footer__logo-img { max-height: 48px; width: auto; max-width: 200px; margin-bottom: 12px; }
 
 /* ── Legal Page Logo ───────────────────────────────────────────── */
 .mc-legal-logo { height: 48px; width: auto; margin-bottom: 24px; }

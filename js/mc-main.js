@@ -69,6 +69,16 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeNav();
     });
+
+    // Mobile dropdown toggle
+    nav.querySelectorAll('.mc-nav__dropdown-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          toggle.closest('.mc-nav__dropdown').classList.toggle('mc-nav__dropdown--open');
+        }
+      });
+    });
   }
 
   // ─── Sticky Header ───────────────────────────────────────────────
