@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   white-space: nowrap;
   display: flex; align-items: center;
 }
-.mc-header__logo img { height: 44px; width: auto; max-width: 220px; }
+.mc-header__logo img { height: 48px; width: auto; max-width: 280px; }
 .mc-header__logo span { color: var(--mc-gold); }
 
 /* Services dropdown */
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   .mc-nav a { padding: 14px 16px; font-size: 17px; border-bottom: 1px solid var(--mc-gray-100); }
   .mc-nav__cta { margin-top: 16px; text-align: center; border-bottom: none !important; border-radius: var(--mc-radius-sm) !important; }
   .mc-header__inner { padding: 8px 16px; }
-  .mc-header__logo img { height: 32px; max-width: 160px; }
+  .mc-header__logo img { height: 36px; max-width: 200px; }
   .mc-nav__dropdown-menu {
     position: static; box-shadow: none; border: none; border-radius: 0;
     padding: 0; display: none; background: var(--mc-gray-50);
@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-breadcrumb a { color: var(--mc-gray-500); }
 .mc-breadcrumb a:hover { color: var(--mc-accent); }
 .mc-breadcrumb__sep { color: var(--mc-gray-400); }
-.mc-breadcrumb__current { color: var(--mc-slate); font-weight: 500; }
+.mc-breadcrumb__current { color: var(--mc-gold); font-weight: 600; }
 
 /* ── Inner Page Hero ───────────────────────────────────────────── */
 .mc-page-hero {
@@ -775,6 +775,20 @@ div.mc-attorney-photo-lg {
 /* No-list style override */
 .mc-list-none { list-style: none; padding: 0; margin: 0; }
 .mc-list-none li { margin-bottom: 4px; }
+
+/* ── Per-Attorney Photo Position Overrides ──────────────────────── */
+.mc-attorney-card__photo img[src*="chanel-payne"],
+.mc-attorney-card__photo-img[src*="chanel-payne"],
+.mc-attorney-photo-lg[src*="chanel-payne"] { object-position: center 10%; }
+.mc-attorney-card__photo img[src*="byron-forrest"],
+.mc-attorney-card__photo-img[src*="byron-forrest"],
+.mc-attorney-photo-lg[src*="byron-forrest"] { object-position: 60% 15%; }
+.mc-attorney-card__photo img[src*="eric-hamilton"],
+.mc-attorney-card__photo-img[src*="eric-hamilton"],
+.mc-attorney-photo-lg[src*="eric-hamilton"] { object-position: center 15%; }
+.mc-attorney-card__photo img[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]),
+.mc-attorney-card__photo-img[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]),
+.mc-attorney-photo-lg[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]) { object-position: 55% 20%; }
 
 /* ── Team Group Photo ───────────────────────────────────────────── */
 .mc-figure--wide img { max-height: 500px; object-fit: contain; }
