@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   font-size: 40px; color: var(--mc-gold);
   overflow: hidden;
 }
-.mc-attorney-card__photo img { width: 100%; height: 100%; object-fit: cover; }
+.mc-attorney-card__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top 20%; }
 .mc-attorney-card__name { font-family: var(--mc-font-heading); font-size: 22px; color: var(--mc-slate); margin-bottom: 4px; }
 .mc-attorney-card__title { font-size: 14px; color: var(--mc-gold-text); font-weight: 500; margin-bottom: 12px; }
 .mc-attorney-card__bio { font-size: 14px; color: var(--mc-gray-600); line-height: 1.6; }
@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 
 /* ── Attorney Photo in Cards ───────────────────────────────────── */
 .mc-attorney-card__photo-wrap, .mc-attorney-photo-wrap { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; }
-.mc-attorney-card__photo-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mc-attorney-card__photo-img { width: 100%; height: 100%; object-fit: cover; object-position: top 20%; display: block; }
 
 /* ── Office Card Photo ─────────────────────────────────────────── */
 /* mc-office-card__photo as <img> */
@@ -732,10 +732,15 @@ figure.mc-office-card__photo figcaption { font-size: 13px; color: var(--mc-gray-
 /* Attorney photo placeholder (YMYL: no fake photos) */
 .mc-attorney-photo-lg {
   width: 160px; height: 160px; border-radius: 50%;
+  object-fit: cover; object-position: top 20%;
+  display: block; margin: 0 auto 24px;
+  border: 3px solid var(--mc-gold-light);
+}
+/* Placeholder variant (no real photo) */
+div.mc-attorney-photo-lg {
   background: linear-gradient(135deg, var(--mc-cream) 0%, var(--mc-gray-200) 100%);
   display: flex; align-items: center; justify-content: center;
   font-family: var(--mc-font-heading); font-size: 48px; color: var(--mc-gold);
-  margin: 0 auto 24px; border: 3px solid var(--mc-gold-light);
 }
 
 /* YMYL image placeholder — clearly marked for real photo replacement */
