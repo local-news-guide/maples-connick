@@ -1,0 +1,39 @@
+# Cloudflare Pages redirects
+# Format: /old-path /new-path STATUS_CODE
+#
+# Wix-to-WordPress URL migration redirects
+
+# ── Team Pages ────────────────────────────────────────────────
+/aaron-maples /attorneys/aaron-maples/ 301
+/brendan-connick /attorneys/brendan-connick/ 301
+/chanel-payne /attorneys/chanel-payne/ 301
+/byron-forrest /attorneys/byron-forrest/ 301
+/ian-brendel /attorneys/ian-brendel/ 301
+/eric-hamilton /attorneys/eric-hamilton/ 301
+/monica-villegas /attorneys/monica-villegas/ 301
+
+# ── Firm Pages ────────────────────────────────────────────────
+/about-us /about/ 301
+
+# ── Practice Areas ────────────────────────────────────────────
+/personal-injury-and-negligence /practice-areas/personal-injury/ 301
+/nursing-home-negligence-and-medical-malpractice /practice-areas/nursing-home-negligence/ 301
+/immigration-law /practice-areas/immigration/ 301
+
+# ── Other Pages ───────────────────────────────────────────────
+/our-results /our-results/ 301
+/blog /blog/ 301
+
+# ── Blog Posts (individual redirects from Wix /post/ paths) ──
+/post/maples-connick-llc-to-file-suit-against-the-city-of-new-orleans-and-nopd-for-negligence-leading-t /blog/lawsuit-new-orleans-nopd/ 301
+/post/understanding-the-cap-on-general-damages-in-louisiana-medical-malpractice-claims /blog/louisiana-medical-malpractice-damages-cap/ 301
+/post/the-road-ahead-what-happens-after-filing-a-lawsuit /blog/what-happens-after-filing-lawsuit/ 301
+/post/civil-complaint-filed-for-the-deadly-mass-tragedy-in-new-orleans /blog/civil-complaint-mass-tragedy-new-orleans/ 301
+/post/why-courtroom-experience-matters /blog/why-courtroom-experience-matters/ 301
+/post/five-quick-tips-to-prepare-for-hurricane-season /blog/hurricane-season-preparation-tips/ 301
+/post/subrogation-in-personal-injury-claims-what-injured-victims-need-to-know /blog/subrogation-personal-injury-claims/ 301
+/post/stay-calm-steps-to-take-after-a-car-wreck /blog/steps-after-car-wreck/ 301
+/post/louisiana-s-2024-reform-timing-is-everything /blog/louisiana-2024-tort-reform/ 301
+
+# ── Blog Post Catch-All (any future unmapped Wix posts) ─────
+/post/* /blog/ 301

@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- ═══ PRACTICE AREA ICONS ═══ -->
+
+  <symbol id="mc-icon-scales" viewBox="0 0 48 48">
+    <title>Scales of Justice</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M24 4v36M12 40h24M24 8L8 18M24 8l16 10M8 18l-4 12c0 3.3 3.6 6 8 6s8-2.7 8-6l-4-12M24 18l-4 12c0 3.3 3.6 6 8 6s8-2.7 8-6l-4-12"/>
+  </symbol>
+
+  <symbol id="mc-icon-medical" viewBox="0 0 48 48">
+    <title>Medical Cross</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 6h12v12h12v12H30v12H18V30H6V18h12z"/>
+    <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="mc-icon-home-shield" viewBox="0 0 48 48">
+    <title>Nursing Home Protection</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 20L24 6l18 14v20a2 2 0 01-2 2H8a2 2 0 01-2-2z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M24 22v-2m0 0c-3 0-6 2-6 6 0 5 6 10 6 10s6-5 6-10c0-4-3-6-6-6z"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" d="M22 28l2 2 4-4"/>
+  </symbol>
+
+  <symbol id="mc-icon-globe" viewBox="0 0 48 48">
+    <title>Immigration / Global</title>
+    <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="24" cy="24" rx="10" ry="20" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M4 24h40M6 14h36M6 34h36"/>
+  </symbol>
+
+  <!-- ═══ PROCESS STEP ICONS ═══ -->
+
+  <symbol id="mc-icon-phone-ring" viewBox="0 0 48 48">
+    <title>Free Consultation</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 6c0 0-6 4-6 12s10 22 18 26c0 0 6-2 8-6l-6-6-4 3c-2-2-8-8-10-12l3-4z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M30 6c2 2 4 5 4 10M26 10c1 1.5 2.5 3.5 2.5 6"/>
+  </symbol>
+
+  <symbol id="mc-icon-search" viewBox="0 0 48 48">
+    <title>Investigation</title>
+    <circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M30 30l12 12"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M14 18h12M14 24h8"/>
+  </symbol>
+
+  <symbol id="mc-icon-gavel" viewBox="0 0 48 48">
+    <title>Litigation / Trial</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 8l10 10M30 14l-10 10M18 12l16 16M10 36l6-6M32 34H44M38 34v6"/>
+    <rect x="8" y="34" width="8" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-45 12 36)"/>
+  </symbol>
+
+  <symbol id="mc-icon-handshake" viewBox="0 0 48 48">
+    <title>Resolution</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20h8l8-4 6 2 6-2 8 4h8M12 20v14l8 4 4-2M36 20v14l-8 4-4-2M20 38l4-2 4 2"/>
+  </symbol>
+
+  <!-- ═══ TRUST SIGNAL ICONS ═══ -->
+
+  <symbol id="mc-icon-star" viewBox="0 0 48 48">
+    <title>Star Rating</title>
+    <path fill="currentColor" d="M24 4l5.5 13.5H44l-11.5 9L37 40 24 31.5 11 40l4.5-13.5L4 17.5h14.5z"/>
+  </symbol>
+
+  <symbol id="mc-icon-shield-check" viewBox="0 0 48 48">
+    <title>Verified / Trusted</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M24 4L8 12v12c0 11 7 20 16 24 9-4 16-13 16-24V12z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M16 24l6 6 10-12"/>
+  </symbol>
+
+  <symbol id="mc-icon-certificate" viewBox="0 0 48 48">
+    <title>AV Preeminent / Award</title>
+    <rect x="6" y="4" width="36" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M14 12h20M14 18h14M14 24h10"/>
+    <circle cx="36" cy="34" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" d="M36 30v4l-2 2h4l-2-2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M32 40l-2 6 6-3 6 3-2-6"/>
+  </symbol>
+
+  <symbol id="mc-icon-map-pin" viewBox="0 0 48 48">
+    <title>Location</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M24 44s16-14 16-24a16 16 0 00-32 0c0 10 16 24 16 24z"/>
+    <circle cx="24" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="mc-icon-users" viewBox="0 0 48 48">
+    <title>Team / Attorneys</title>
+    <circle cx="18" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M4 38c0-8 6-14 14-14s14 6 14 14"/>
+    <circle cx="34" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M34 24c5 0 10 4 10 10"/>
+  </symbol>
+
+  <!-- ═══ UI ICONS ═══ -->
+
+  <symbol id="mc-icon-arrow-right" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 24h28M28 16l8 8-8 8"/>
+  </symbol>
+
+  <symbol id="mc-icon-chevron-down" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M12 18l12 12 12-12"/>
+  </symbol>
+
+  <symbol id="mc-icon-phone" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 6c0 0-6 4-6 12s10 22 18 26c0 0 6-2 8-6l-6-6-4 3c-2-2-8-8-10-12l3-4z"/>
+  </symbol>
+
+  <symbol id="mc-icon-email" viewBox="0 0 48 48">
+    <rect x="4" y="10" width="40" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12l20 14 20-14"/>
+  </symbol>
+
+  <symbol id="mc-icon-clock" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M24 12v12l8 4"/>
+  </symbol>
+
+  <symbol id="mc-icon-check" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M8 24l12 12L40 12"/>
+  </symbol>
+
+  <symbol id="mc-icon-plus" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M24 8v32M8 24h32"/>
+  </symbol>
+
+  <symbol id="mc-icon-close" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 12l24 24M36 12L12 36"/>
+  </symbol>
+
+  <symbol id="mc-icon-menu" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M8 14h32M8 24h32M8 34h32"/>
+  </symbol>
+
+  <symbol id="mc-icon-arrow-up" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M24 40V12M16 20l8-8 8 8"/>
+  </symbol>
+
+  <!-- ═══ CONTENT TYPE ICONS ═══ -->
+
+  <symbol id="mc-icon-car-crash" viewBox="0 0 48 48">
+    <title>Auto Accident</title>
+    <rect x="2" y="20" width="20" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="8" cy="34" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="18" cy="34" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20l4-8h10l4 8"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M26 22l4 4m0-4l-4 4"/>
+    <rect x="32" y="18" width="14" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="36" cy="36" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M32 18v-4h14v4"/>
+  </symbol>
+
+  <symbol id="mc-icon-hardhat" viewBox="0 0 48 48">
+    <title>Workplace Injury</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M8 28h32v4a4 4 0 01-4 4H12a4 4 0 01-4-4v-4z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M12 28v-8c0-6.6 5.4-12 12-12s12 5.4 12 12v8"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M24 8v20"/>
+    <rect x="6" y="36" width="36" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="mc-icon-slip" viewBox="0 0 48 48">
+    <title>Slip and Fall</title>
+    <circle cx="30" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M26 16l-8 10 6 2-6 10M34 16l4 8-6 4 8 8"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 40l10-4 10 2 10-4 10 2"/>
+  </symbol>
+
+  <symbol id="mc-icon-heart-pulse" viewBox="0 0 48 48">
+    <title>Wrongful Death</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M24 42S6 30 6 18a10 10 0 0118-6 10 10 0 0118 6C42 30 24 42 24 42z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 24h6l3-6 4 12 3-6h6"/>
+  </symbol>
+
+  <symbol id="mc-icon-warning" viewBox="0 0 48 48">
+    <title>Warning / Alert</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M24 4L4 42h40z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M24 18v12M24 34v2"/>
+  </symbol>
+
+  <symbol id="mc-icon-document" viewBox="0 0 48 48">
+    <title>Legal Document</title>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M10 4h20l10 10v30a2 2 0 01-2 2H12a2 2 0 01-2-2V4z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M30 4v10h10"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M16 22h16M16 28h16M16 34h10"/>
+  </symbol>
+
+  <symbol id="mc-icon-quote" viewBox="0 0 48 48">
+    <title>Testimonial Quote</title>
+    <path fill="currentColor" d="M18 8H6v16c0 8 4 14 12 18l2-4c-4-2-6-6-6-10h4a4 4 0 004-4V12a4 4 0 00-4-4zM42 8H30v16c0 8 4 14 12 18l2-4c-4-2-6-6-6-10h4a4 4 0 004-4V12a4 4 0 00-4-4z"/>
+  </symbol>
+
+  <!-- ═══ DECORATIVE ═══ -->
+
+  <symbol id="mc-icon-divider-gold" viewBox="0 0 120 4">
+    <rect width="120" height="4" rx="2" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="mc-icon-badge-av" viewBox="0 0 60 60">
+    <title>AV Preeminent</title>
+    <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="30" y="26" text-anchor="middle" font-family="Marcellus, serif" font-size="18" font-weight="700" fill="currentColor">AV</text>
+    <text x="30" y="42" text-anchor="middle" font-family="Heebo, sans-serif" font-size="8" fill="currentColor">PREEMINENT</text>
+  </symbol>
+
+</svg>
