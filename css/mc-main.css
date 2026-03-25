@@ -629,14 +629,24 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-hero-image, .mc-hero__image { width: 100%; height: auto; border-radius: var(--mc-radius-lg); }
 .mc-article-hero { width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--mc-radius-lg); margin-bottom: 32px; }
 
-/* Hero with background image */
-.mc-hero--bg, .mc-hero[style*="background-image"], .mc-page-hero[style*="background-image"] {
-  background-size: cover; background-position: center; position: relative;
-}
-.mc-hero--bg::after, .mc-hero[style*="background-image"]::after, .mc-page-hero[style*="background-image"]::after {
-  content: ''; position: absolute; inset: 0; background: rgba(42,52,63,0.85); z-index: 0;
-}
-.mc-hero--bg > *, .mc-hero[style*="background-image"] > *, .mc-page-hero[style*="background-image"] > * { position: relative; z-index: 1; }
+/* Hero with background image (legacy — inline style selectors) */
+.mc-hero--bg { background-size: cover; background-position: center; position: relative; }
+.mc-hero--bg::after { content: ''; position: absolute; inset: 0; background: rgba(42,52,63,0.85); z-index: 0; }
+.mc-hero--bg > * { position: relative; z-index: 1; }
+
+/* Hero/CTA with background image element (no inline styles) */
+.mc-hero--with-bg { position: relative; overflow: hidden; }
+.mc-hero.mc-hero--with-bg { background: transparent; }
+.mc-hero.mc-hero--with-bg::before { display: none; }
+.mc-page-hero.mc-hero--with-bg { background: transparent; }
+.mc-cta-section.mc-hero--with-bg { background: transparent; }
+.mc-cta-section.mc-hero--with-bg::before { display: none; }
+.mc-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.mc-hero--with-bg::after { content: ''; position: absolute; inset: 0; background: rgba(42,52,63,0.85); z-index: 1; }
+.mc-hero--with-bg > *:not(.mc-hero__bg) { position: relative; z-index: 2; }
+
+/* Light caption for dark-background sections */
+.mc-figure__caption--light { color: rgba(255,255,255,0.7); }
 
 /* ── Badge & Trust Image Strips ────────────────────────────────── */
 .mc-badge-strip { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 24px; padding: 24px 0; }
