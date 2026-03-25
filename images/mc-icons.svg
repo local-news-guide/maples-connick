@@ -91,13 +91,7 @@
 
   <!-- ═══ UI ICONS ═══ -->
 
-  <symbol id="mc-icon-arrow-right" viewBox="0 0 48 48">
-    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 24h28M28 16l8 8-8 8"/>
-  </symbol>
-
-  <symbol id="mc-icon-chevron-down" viewBox="0 0 48 48">
-    <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M12 18l12 12 12-12"/>
-  </symbol>
+  <!-- arrow-right and chevron-down removed: unused -->
 
   <symbol id="mc-icon-phone" viewBox="0 0 48 48">
     <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 6c0 0-6 4-6 12s10 22 18 26c0 0 6-2 8-6l-6-6-4 3c-2-2-8-8-10-12l3-4z"/>
@@ -186,17 +180,6 @@
     <path fill="currentColor" d="M18 8H6v16c0 8 4 14 12 18l2-4c-4-2-6-6-6-10h4a4 4 0 004-4V12a4 4 0 00-4-4zM42 8H30v16c0 8 4 14 12 18l2-4c-4-2-6-6-6-10h4a4 4 0 004-4V12a4 4 0 00-4-4z"/>
   </symbol>
 
-  <!-- ═══ DECORATIVE ═══ -->
-
-  <symbol id="mc-icon-divider-gold" viewBox="0 0 120 4">
-    <rect width="120" height="4" rx="2" fill="currentColor"/>
-  </symbol>
-
-  <symbol id="mc-icon-badge-av" viewBox="0 0 60 60">
-    <title>AV Preeminent</title>
-    <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
-    <text x="30" y="26" text-anchor="middle" font-family="Marcellus, serif" font-size="18" font-weight="700" fill="currentColor">AV</text>
-    <text x="30" y="42" text-anchor="middle" font-family="Heebo, sans-serif" font-size="8" fill="currentColor">PREEMINENT</text>
-  </symbol>
+  <!-- divider-gold and badge-av removed: unused -->
 
 </svg>

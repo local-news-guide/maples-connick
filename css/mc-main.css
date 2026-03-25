@@ -5,7 +5,7 @@
    Fonts: Marcellus (headings), Heebo (body)
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Heebo:wght@300;400;500;600;700&display=swap');
+/* Google Fonts loaded via <link> in HTML <head> for parallel loading */
 
 /* ── Variables ─────────────────────────────────────────────────── */
 :root {
@@ -17,7 +17,7 @@
   --mc-gold: #AF9A65;
   --mc-gold-hover: #9A8656;
   --mc-gold-light: rgba(175, 154, 101, 0.15);
-  --mc-gold-text: #7A6B47;
+  --mc-gold-text: #5C5133;
   --mc-cream: #F5F4F2;
   --mc-white: #FFFFFF;
   --mc-gray-50: #FAFAF9;
@@ -90,9 +90,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 }
 .mc-header--hidden { transform: translateY(-100%); }
 .mc-header__inner {
-  max-width: 1400px; margin: 0 auto;
+  max-width: 1600px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 24px;
+  padding: 12px 40px;
 }
 .mc-header__logo {
   font-family: var(--mc-font-heading);
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   white-space: nowrap;
   display: flex; align-items: center;
 }
-.mc-header__logo img { height: 36px; width: auto; max-width: 180px; }
+.mc-header__logo img { height: 44px; width: auto; max-width: 220px; }
 .mc-header__logo span { color: var(--mc-gold); }
 
 /* Services dropdown */
@@ -126,9 +126,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-nav__dropdown-divider { height: 1px; margin: 4px 12px; background: var(--mc-gray-200); }
 
 /* Nav */
-.mc-nav { display: flex; align-items: center; gap: 8px; }
+.mc-nav { display: flex; align-items: center; gap: 16px; }
 .mc-nav a {
-  display: block; padding: 8px 16px;
+  display: block; padding: 10px 18px;
   font-size: 15px; font-weight: 500; color: var(--mc-gray-600);
   border-radius: var(--mc-radius-sm);
   transition: color 0.2s, background 0.2s;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   .mc-nav a { padding: 14px 16px; font-size: 17px; border-bottom: 1px solid var(--mc-gray-100); }
   .mc-nav__cta { margin-top: 16px; text-align: center; border-bottom: none !important; border-radius: var(--mc-radius-sm) !important; }
   .mc-header__inner { padding: 8px 16px; }
-  .mc-header__logo img { height: 30px; }
+  .mc-header__logo img { height: 32px; max-width: 160px; }
   .mc-nav__dropdown-menu {
     position: static; box-shadow: none; border: none; border-radius: 0;
     padding: 0; display: none; background: var(--mc-gray-50);
@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   font-size: 40px; color: var(--mc-gold);
   overflow: hidden;
 }
-.mc-attorney-card__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top 20%; }
+.mc-attorney-card__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .mc-attorney-card__name { font-family: var(--mc-font-heading); font-size: 22px; color: var(--mc-slate); margin-bottom: 4px; }
 .mc-attorney-card__title { font-size: 14px; color: var(--mc-gold-text); font-weight: 500; margin-bottom: 12px; }
 .mc-attorney-card__bio { font-size: 14px; color: var(--mc-gray-600); line-height: 1.6; }
@@ -400,13 +400,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 }
 .mc-office-card__icon-row .mc-icon { width: 20px; height: 20px; color: var(--mc-gold); flex-shrink: 0; }
 
-/* Map placeholder — replace with real Google Maps embed */
-.mc-map-placeholder {
-  background: var(--mc-slate); height: 220px; border-radius: var(--mc-radius-sm);
-  display: flex; align-items: center; justify-content: center; color: var(--mc-white);
-  margin-bottom: 16px;
-}
-.mc-map-placeholder--tall { height: 300px; }
+/* Map placeholder — see consolidated rule in utilities */
 
 /* ── Stat Grid ─────────────────────────────────────────────────── */
 .mc-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
@@ -567,7 +561,6 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-disclaimer--prominent { display: flex; gap: 16px; align-items: flex-start; background: #FFF8E7; border-left-color: var(--mc-gold); padding: 24px; }
 .mc-map-placeholder { width: 100%; height: 300px; border-radius: var(--mc-radius-lg); background: var(--mc-cream); border: 2px dashed var(--mc-gray-400); display: flex; align-items: center; justify-content: center; color: var(--mc-gray-500); font-size: 14px; }
 .mc-map-placeholder--tall { height: 400px; }
-.mc-office-card__icon-row { display: flex; align-items: center; gap: 8px; }
 .mc-office-card__desc { font-size: 15px; color: var(--mc-gray-600); line-height: 1.6; margin-bottom: 12px; }
 
 /* ── Form System ───────────────────────────────────────────────── */
@@ -686,7 +679,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 
 /* ── Attorney Photo in Cards ───────────────────────────────────── */
 .mc-attorney-card__photo-wrap, .mc-attorney-photo-wrap { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; }
-.mc-attorney-card__photo-img { width: 100%; height: 100%; object-fit: cover; object-position: top 20%; display: block; }
+.mc-attorney-card__photo-img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
 
 /* ── Office Card Photo ─────────────────────────────────────────── */
 /* mc-office-card__photo as <img> */
@@ -706,6 +699,7 @@ figure.mc-office-card__photo figcaption { font-size: 13px; color: var(--mc-gray-
 .mc-page-hero__author { font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 8px; }
 .mc-testimonial__footer { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
 .mc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.mc-sr-only:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; padding: 8px 16px; background: var(--mc-gold); color: var(--mc-slate-dark); font-weight: 600; z-index: 9999; display: inline-block; }
 
 /* ── SVG Icon System ───────────────────────────────────────────── */
 .mc-icon {
@@ -732,7 +726,7 @@ figure.mc-office-card__photo figcaption { font-size: 13px; color: var(--mc-gray-
 /* Attorney photo placeholder (YMYL: no fake photos) */
 .mc-attorney-photo-lg {
   width: 160px; height: 160px; border-radius: 50%;
-  object-fit: cover; object-position: top 20%;
+  object-fit: cover; object-position: center 20%;
   display: block; margin: 0 auto 24px;
   border: 3px solid var(--mc-gold-light);
 }
@@ -781,6 +775,20 @@ div.mc-attorney-photo-lg {
 /* No-list style override */
 .mc-list-none { list-style: none; padding: 0; margin: 0; }
 .mc-list-none li { margin-bottom: 4px; }
+
+/* ── Team Group Photo ───────────────────────────────────────────── */
+.mc-figure--wide img { max-height: 500px; object-fit: contain; }
+
+/* ── Content image on figure fix ────────────────────────────────── */
+figure.mc-content-image { width: 100%; margin: 24px 0; overflow: hidden; border-radius: var(--mc-radius-lg); }
+figure.mc-content-image img { width: 100%; height: auto; display: block; border-radius: 0; }
+figure.mc-content-image figcaption { font-size: 13px; color: var(--mc-gray-500); margin-top: 8px; padding: 0 4px; }
+
+/* ── Breadcrumb list variant separators ────────────────────────── */
+.mc-breadcrumb__list li + li::before { content: '/'; color: var(--mc-gray-400); margin-right: 8px; }
+
+/* ── Scroll-to-top overlap fix ─────────────────────────────────── */
+.mc-footer__bottom { padding-right: 60px; }
 
 /* ── Reduced Motion ────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
