@@ -166,12 +166,14 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 .mc-nav-overlay--visible { opacity: 1; }
 
 @media (max-width: 900px) {
-  .mc-nav-toggle { display: flex; }
+  .mc-nav-toggle { display: flex; position: relative; z-index: 1002; }
   .mc-nav-overlay { display: block; pointer-events: none; }
   .mc-nav-overlay--visible { pointer-events: auto; }
   .mc-nav[data-mc-nav] {
-    position: fixed; top: 0; right: 0; bottom: 0;
+    position: fixed; top: 0; right: 0;
     width: 300px; max-width: 85vw;
+    height: 100vh; height: 100dvh;
+    overflow-y: auto;
     background: var(--mc-white); z-index: 1001;
     flex-direction: column; align-items: stretch;
     padding: 80px 24px 24px;
