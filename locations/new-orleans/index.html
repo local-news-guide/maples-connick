@@ -143,29 +143,34 @@
     <div class="mc-container">
       <div class="mc-card-grid mc-card-grid--2">
         <div data-mc-reveal="fade-up">
-          <div class="mc-office-card">
+          <div class="mc-office-card" itemscope itemtype="https://schema.org/LegalService">
+            <meta itemprop="name" content="Maples &amp; Connick - New Orleans">
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-map-pin"/></svg>
               <div class="mc-office-card__state">Louisiana</div>
             </div>
             <div class="mc-office-card__city">New Orleans</div>
-            <address class="mc-office-card__address">733 Dante St, Ste. H<br>New Orleans, LA 70118</address>
+            <address class="mc-office-card__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">733 Dante St, Ste. H</span><br><span itemprop="addressLocality">New Orleans</span>, <span itemprop="addressRegion">LA</span> <span itemprop="postalCode">70118</span></address>
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-phone"/></svg>
-              <a href="tel:+15042693870" class="mc-office-card__phone">504-269-3870</a>
+              <a href="tel:+15042693870" class="mc-office-card__phone" itemprop="telephone">504-269-3870</a>
             </div>
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-clock"/></svg>
+              <meta itemprop="openingHours" content="Mo-Fr 08:00-17:00">
               <span>Mon-Fri 9:00 AM - 5:00 PM</span>
             </div>
           </div>
         </div>
         <div data-mc-reveal="fade-up">
-          <!-- Replace with actual Google Maps embed using Place ID -->
-          <div class="mc-map-placeholder mc-map-placeholder--tall">
-            <svg class="mc-icon mc-icon--lg"><use href="../../images/mc-icons.svg#mc-icon-map-pin"/></svg>
-            <span>Google Maps: 733 Dante St, Ste. H, New Orleans, LA 70118</span>
-          </div>
+          <figure class="mc-office-card__photo">
+            <img src="../../images/offices/new-orleans-google.jpg" alt="Maples and Connick New Orleans office exterior at 733 Dante Street" width="600" height="400" loading="lazy">
+            <figcaption>Maples &amp; Connick headquarters, 733 Dante St, New Orleans</figcaption>
+          </figure>
+          <figure class="mc-office-card__photo mc-mt-sm">
+            <img src="../../images/offices/new-orleans-streetview.jpg" alt="Street view of the New Orleans office neighborhood on Dante Street" width="600" height="400" loading="lazy">
+            <figcaption>Dante Street, New Orleans - firm headquarters location</figcaption>
+          </figure>
           <p class="mc-mt-sm mc-text-center">
             <a href="https://maps.google.com/?q=733+Dante+St+Ste+H+New+Orleans+LA+70118" target="_blank" rel="noopener" class="mc-card__link">Get directions</a>
           </p>

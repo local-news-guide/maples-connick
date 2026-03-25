@@ -54,15 +54,15 @@
   </header>
 
   <!-- ── Page Hero ───────────────────────────────────────────── -->
-  <section class="mc-page-hero" data-mc-reveal="fade-up">
+  <section class="mc-page-hero" itemscope itemtype="https://schema.org/LegalService" data-mc-reveal="fade-up">
     <div class="mc-container">
       <nav class="mc-breadcrumb" aria-label="Breadcrumb">
         <a href="../">Home</a>
         <span class="mc-breadcrumb__sep">/</span>
         <span class="mc-breadcrumb__current">Practice Areas</span>
       </nav>
-      <h1>Practice Areas</h1>
-      <p class="mc-lead">We concentrate on high-stakes cases where preparation, expertise, and trial readiness make the difference. Four focused practice areas across three states.</p>
+      <h1 itemprop="name">Practice Areas</h1>
+      <p class="mc-lead" itemprop="description">We concentrate on high-stakes cases where preparation, expertise, and trial readiness make the difference. Four focused practice areas across three states.</p>
     </div>
   </section>
 
@@ -329,19 +329,32 @@
           <svg class="mc-icon mc-icon--sm"><use href="../images/mc-icons.svg#mc-icon-star"/></svg>
           <svg class="mc-icon mc-icon--sm"><use href="../images/mc-icons.svg#mc-icon-star"/></svg>
         </div>
-        <p class="mc-testimonial__text">Aaron and Brendan fought hard for my family when we needed it most. They were always available, always prepared, and they delivered results beyond what we expected. From the first meeting, we knew we were in good hands.</p>
+        <blockquote cite="https://www.martindale.com/organization/maples-connick-llc-16773254/" class="mc-testimonial__text">
+          <p>Aaron and Brendan fought hard for my family when we needed it most. They were always available, always prepared, and they delivered results beyond what we expected. From the first meeting, we knew we were in good hands.</p>
+        </blockquote>
         <div class="mc-testimonial__author">Martindale Review</div>
         <div class="mc-testimonial__source">5.0 / 5.0 &mdash; Martindale-Hubbell</div>
       </div>
     </div>
   </section>
 
-  <!-- ── YMYL Image Placeholder ──────────────────────────────── -->
+  <!-- ── Contextual Image ────────────────────────────────────── -->
   <section class="mc-section" data-mc-reveal="fade-up">
     <div class="mc-container mc-container--narrow">
-      <div class="mc-image-placeholder">
-        <svg class="mc-icon"><use href="../images/mc-icons.svg#mc-icon-users"/></svg>
-        <span>Team photo placeholder &mdash; replace with real firm photography</span>
+      <figure class="mc-content-image">
+        <img src="../images/brand/courtroom.jpg" alt="Maples Connick attorneys preparing for trial in a Louisiana courtroom" width="800" height="450" loading="lazy">
+        <figcaption>Our attorneys prepare every case for trial across <span itemprop="areaServed">Louisiana</span>, <span itemprop="areaServed">Alabama</span>, and <span itemprop="areaServed">Georgia</span>.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ── Trust Badges ──────────────────────────────────────────── -->
+  <section class="mc-section" data-mc-reveal="fade-up">
+    <div class="mc-container">
+      <div class="mc-trust-bar">
+        <img src="../images/brand/badge-super-lawyers.png" alt="Super Lawyers designation for Maples Connick attorneys" width="100" height="100" loading="lazy">
+        <img src="../images/brand/badge-martindale.png" alt="Martindale-Hubbell AV Preeminent peer rating" width="100" height="100" loading="lazy">
+        <img src="../images/brand/badge-rising-stars.png" alt="Super Lawyers Rising Stars recognition" width="100" height="100" loading="lazy">
       </div>
     </div>
   </section>

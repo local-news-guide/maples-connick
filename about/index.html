@@ -9,6 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="About Maples Connick">
   <meta property="og:description" content="Trial attorneys fighting for injury victims in New Orleans, Mobile, and Atlanta.">
+  <meta property="og:image" content="https://maplesconnick.com/images/brand/about-hero.jpg">
   <meta property="og:url" content="https://maplesconnick.com/about/">
   <meta property="og:site_name" content="Maples Connick">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,9 @@
   <div class="mc-nav-overlay" data-mc-nav-overlay></div>
   <header class="mc-header">
     <div class="mc-header__inner">
-      <a href="../" class="mc-header__logo">Maples <span>&amp;</span> Connick</a>
+      <a href="../" class="mc-header__logo">
+        <img src="../images/brand/nav-logo.png" alt="Maples &amp; Connick" width="180" height="40" loading="eager">
+      </a>
       <nav class="mc-nav" data-mc-nav aria-label="Main navigation">
         <a href="../practice-areas/">Practice Areas</a>
         <a href="../attorneys/">Our Team</a>
@@ -43,7 +46,7 @@
   </header>
 
   <!-- ── Page Hero ──────────────────────────────────────────── -->
-  <section class="mc-page-hero">
+  <section class="mc-page-hero" style="background-image:url('../images/brand/about-hero.jpg');background-size:cover;background-position:center;">
     <div class="mc-container">
       <nav class="mc-breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> <span class="mc-breadcrumb__sep">/</span> <span class="mc-breadcrumb__current">About Us</span></nav>
       <h1>About Maples Connick</h1>
@@ -52,18 +55,34 @@
   </section>
 
   <!-- ── Our Story ──────────────────────────────────────────── -->
-  <section class="mc-section">
+  <section class="mc-section" itemscope itemtype="https://schema.org/LegalService">
     <div class="mc-container mc-container--narrow">
       <article class="mc-content" data-mc-reveal="fade-up">
         <h2>Our Story</h2>
-        <p>Maples &amp; Connick was founded on a straightforward principle: injury victims deserve attorneys who prepare every case as though it will go to trial. Aaron Maples and Brendan Connick built this firm to handle the kinds of catastrophic injury cases that demand preparation, resources, and courtroom experience.</p>
-        <p>With offices in New Orleans, Mobile, and Atlanta, we represent clients across Louisiana, Alabama, and Georgia. Our team of six attorneys and a dedicated paralegal handles personal injury, medical malpractice, nursing home negligence, and immigration cases.</p>
+
+        <figure class="mc-figure mc-figure--right" data-mc-reveal="fade-up">
+          <img src="../images/brand/partners.png" alt="Aaron Maples and Brendan Connick, founding partners of Maples &amp; Connick" width="480" height="360" loading="lazy" itemprop="image">
+          <figcaption class="mc-figure__caption">Aaron Maples and Brendan Connick, founding partners</figcaption>
+        </figure>
+
+        <p><span itemprop="name">Maples &amp; Connick</span> was founded on a straightforward principle: injury victims deserve attorneys who prepare every case as though it will go to trial. Aaron Maples and Brendan Connick built this firm to handle the kinds of catastrophic injury cases that demand preparation, resources, and courtroom experience.</p>
+        <p>With offices in <a href="../locations/new-orleans/">New Orleans</a>, <a href="../locations/mobile/">Mobile</a>, and <a href="../locations/atlanta/">Atlanta</a>, we represent clients across Louisiana, Alabama, and Georgia. Our team of six attorneys and a dedicated paralegal handles <a href="../practice-areas/personal-injury/">personal injury</a>, <a href="../practice-areas/medical-malpractice/">medical malpractice</a>, <a href="../practice-areas/nursing-home-negligence/">nursing home negligence</a>, and <a href="../practice-areas/immigration/">immigration</a> cases.</p>
         <p>We take a focused caseload. That means every client gets direct access to their attorney — not a case manager, not a paralegal screening calls. When you hire Maples Connick, you get attorneys who know every detail of your case because they are working it themselves.</p>
 
         <h2>What We Believe</h2>
         <p>Insurance companies, corporations, and institutions have legal teams on retainer. They prepare for litigation as a cost of doing business. The people they injure through negligence deserve attorneys who match that preparation — and exceed it.</p>
         <p>We believe the courtroom is where accountability happens. Not every case goes to trial, but every case should be prepared as if it will. That preparation changes how the other side evaluates your claim, and it changes what they offer to resolve it.</p>
       </article>
+    </div>
+  </section>
+
+  <!-- ── Team Photo ──────────────────────────────────────────── -->
+  <section class="mc-section mc-section--slate">
+    <div class="mc-container">
+      <figure class="mc-figure mc-text-center" data-mc-reveal="fade-up">
+        <img src="../images/brand/team-group.jpg" alt="The full Maples Connick legal team" width="960" height="540" loading="lazy">
+        <figcaption class="mc-figure__caption" style="color:rgba(255,255,255,0.7);">The Maples &amp; Connick team: six attorneys serving three states</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -260,26 +279,32 @@
         <hr class="mc-divider--gold">
       </div>
       <div class="mc-card-grid mc-card-grid--3">
-        <div class="mc-attorney-card" data-mc-reveal="fade-up">
-          <div class="mc-attorney-card__photo">AM</div>
-          <div class="mc-attorney-card__name">Aaron N. Maples</div>
-          <div class="mc-attorney-card__title">Member &bull; AV Preeminent</div>
-          <div class="mc-attorney-card__bio">Trial attorney focused on traumatic brain injuries, nursing home negligence, and medical malpractice. Named to Super Lawyers Rising Stars.</div>
-          <a href="../attorneys/aaron-maples/" class="mc-card__link">View profile</a>
+        <div class="mc-attorney-card" data-mc-reveal="fade-up" itemscope itemtype="https://schema.org/Attorney">
+          <div class="mc-attorney-card__photo">
+            <img src="../images/attorneys/aaron-maples.jpg" alt="Aaron N. Maples, Personal Injury Attorney" width="120" height="120" loading="lazy" itemprop="image">
+          </div>
+          <div class="mc-attorney-card__name" itemprop="name">Aaron N. Maples</div>
+          <div class="mc-attorney-card__title" itemprop="jobTitle">Member &bull; AV Preeminent</div>
+          <div class="mc-attorney-card__bio" itemprop="description">Trial attorney focused on traumatic brain injuries, nursing home negligence, and medical malpractice. Named to Super Lawyers Rising Stars.</div>
+          <a href="../attorneys/aaron-maples/" class="mc-card__link" itemprop="url">View profile</a>
         </div>
-        <div class="mc-attorney-card" data-mc-reveal="fade-up">
-          <div class="mc-attorney-card__photo">BC</div>
-          <div class="mc-attorney-card__name">Brendan P. Connick</div>
-          <div class="mc-attorney-card__title">Member</div>
-          <div class="mc-attorney-card__bio">Trial lawyer dedicated to catastrophic personal injury, wrongful death, and products liability in the New Orleans area.</div>
-          <a href="../attorneys/brendan-connick/" class="mc-card__link">View profile</a>
+        <div class="mc-attorney-card" data-mc-reveal="fade-up" itemscope itemtype="https://schema.org/Attorney">
+          <div class="mc-attorney-card__photo">
+            <img src="../images/attorneys/brendan-connick.jpg" alt="Brendan P. Connick, Personal Injury Attorney" width="120" height="120" loading="lazy" itemprop="image">
+          </div>
+          <div class="mc-attorney-card__name" itemprop="name">Brendan P. Connick</div>
+          <div class="mc-attorney-card__title" itemprop="jobTitle">Member</div>
+          <div class="mc-attorney-card__bio" itemprop="description">Trial lawyer dedicated to catastrophic personal injury, wrongful death, and products liability in the New Orleans area.</div>
+          <a href="../attorneys/brendan-connick/" class="mc-card__link" itemprop="url">View profile</a>
         </div>
-        <div class="mc-attorney-card" data-mc-reveal="fade-up">
-          <div class="mc-attorney-card__photo">CP</div>
-          <div class="mc-attorney-card__name">Chanel Payne</div>
-          <div class="mc-attorney-card__title">Of Counsel &bull; Immigration</div>
-          <div class="mc-attorney-card__bio">Immigration, personal injury, and family law. Fluent in English, Spanish, and Portuguese. Serves clients across all three offices.</div>
-          <a href="../attorneys/chanel-payne/" class="mc-card__link">View profile</a>
+        <div class="mc-attorney-card" data-mc-reveal="fade-up" itemscope itemtype="https://schema.org/Attorney">
+          <div class="mc-attorney-card__photo">
+            <img src="../images/attorneys/chanel-payne.jpg" alt="Chanel Payne, Immigration and Personal Injury Attorney" width="120" height="120" loading="lazy" itemprop="image">
+          </div>
+          <div class="mc-attorney-card__name" itemprop="name">Chanel Payne</div>
+          <div class="mc-attorney-card__title" itemprop="jobTitle">Of Counsel &bull; Immigration</div>
+          <div class="mc-attorney-card__bio" itemprop="description">Immigration, personal injury, and family law. Fluent in English, Spanish, and Portuguese. Serves clients across all three offices.</div>
+          <a href="../attorneys/chanel-payne/" class="mc-card__link" itemprop="url">View profile</a>
         </div>
       </div>
       <div class="mc-text-center mc-mt-md" data-mc-reveal="fade-up">
@@ -298,23 +323,17 @@
       </div>
       <div class="mc-card-grid mc-card-grid--4">
         <div class="mc-card" data-mc-reveal="fade-up">
-          <div class="mc-card__svg-icon">
-            <svg class="mc-icon"><use href="../images/mc-icons.svg#mc-icon-star"/></svg>
-          </div>
+          <img src="../images/brand/badge-martindale.png" alt="Martindale-Hubbell 5.0 out of 5.0 rating" width="100" height="100" loading="lazy" class="mc-card__badge-img">
           <h3>5.0 / 5.0</h3>
           <p>Perfect rating on Martindale-Hubbell based on 20 client reviews.</p>
         </div>
         <div class="mc-card" data-mc-reveal="fade-up">
-          <div class="mc-card__svg-icon">
-            <svg class="mc-icon"><use href="../images/mc-icons.svg#mc-icon-certificate"/></svg>
-          </div>
+          <img src="../images/brand/award-badge-large.png" alt="AV Preeminent Rating from Martindale-Hubbell" width="100" height="100" loading="lazy" class="mc-card__badge-img">
           <h3>AV Preeminent</h3>
           <p>Martindale-Hubbell's highest rating for legal ability and professional ethics.</p>
         </div>
         <div class="mc-card" data-mc-reveal="fade-up">
-          <div class="mc-card__svg-icon">
-            <svg class="mc-icon"><use href="../images/mc-icons.svg#mc-icon-scales"/></svg>
-          </div>
+          <img src="../images/brand/badge-super-lawyers.png" alt="Super Lawyers selection badge" width="100" height="100" loading="lazy" class="mc-card__badge-img">
           <h3>Super Lawyers</h3>
           <p>Attorneys selected to the Super Lawyers and Rising Stars lists by Thomson Reuters.</p>
         </div>
@@ -326,11 +345,14 @@
           <p>Full legal representation available in English, Spanish, and Portuguese.</p>
         </div>
       </div>
+      <div class="mc-text-center mc-mt-md" data-mc-reveal="fade-up">
+        <a href="../our-results/" class="mc-btn mc-btn--dark">See Our Results</a>
+      </div>
     </div>
   </section>
 
   <!-- ── CTA ───────────────────────────────────────────────── -->
-  <section class="mc-cta-section">
+  <section class="mc-cta-section" style="background-image:url('../images/brand/hero-bg-alt.jpg');background-size:cover;background-position:center;">
     <div class="mc-container" data-mc-reveal="fade-up">
       <h2>Ready to Talk About Your Case?</h2>
       <p>Consultations are free. You pay nothing unless we win.</p>
@@ -353,6 +375,7 @@
     <div class="mc-footer__grid">
       <div>
         <div class="mc-footer__heading">Maples &amp; Connick</div>
+        <img src="../images/brand/logo-gold.png" alt="Maples &amp; Connick gold logo" width="160" height="36" loading="lazy" class="mc-footer__logo-img">
         <p class="mc-footer__desc">Personal injury, medical malpractice, nursing home negligence, and immigration attorneys serving Louisiana, Alabama, and Georgia.</p>
         <a href="tel:+15042693870" class="mc-footer__phone">504-269-3870</a>
         <div class="mc-social-row mc-mt-sm">
@@ -397,7 +420,9 @@
       </div>
     </div>
   </footer>
-  <button class="mc-scroll-top" data-mc-scroll-top aria-label="Scroll to top">&#8593;</button>
+  <button class="mc-scroll-top" data-mc-scroll-top aria-label="Scroll to top">
+    <svg class="mc-icon"><use href="../images/mc-icons.svg#mc-icon-arrow-up"/></svg>
+  </button>
   <script src="../js/mc-main.js"></script>
 </body>
 </html>

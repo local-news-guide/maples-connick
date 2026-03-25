@@ -9,6 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Personal Injury Attorneys | Maples Connick">
   <meta property="og:description" content="Experienced trial attorneys fighting for injury victims in New Orleans, Mobile, and Atlanta.">
+  <meta property="og:image" content="https://maplesconnick.com/images/brand/hero-team.jpg">
   <meta property="og:url" content="https://maplesconnick.com/">
   <meta property="og:site_name" content="Maples Connick">
   <meta name="twitter:card" content="summary_large_image">
@@ -30,6 +31,8 @@
         "@id": "https://maplesconnick.com/#organization",
         "name": "Maples & Connick, LLC",
         "url": "https://maplesconnick.com/",
+        "logo": "https://maplesconnick.com/images/brand/logo-full.jpg",
+        "image": "https://maplesconnick.com/images/brand/hero-team.jpg",
         "telephone": "+1-504-269-3870",
         "description": "Multi-state personal injury, medical malpractice, nursing home negligence, and immigration law firm.",
         "priceRange": "Free Consultation",
@@ -123,7 +126,9 @@
   <!-- ── Header ──────────────────────────────────────────────── -->
   <header class="mc-header">
     <div class="mc-header__inner">
-      <a href="" class="mc-header__logo">Maples <span>&amp;</span> Connick</a>
+      <a href="" class="mc-header__logo">
+        <img src="images/brand/nav-logo.png" alt="Maples &amp; Connick" width="180" height="40" loading="eager">
+      </a>
       <nav class="mc-nav" data-mc-nav aria-label="Main navigation">
         <a href="practice-areas/">Practice Areas</a>
         <a href="attorneys/">Our Team</a>
@@ -138,15 +143,15 @@
   </header>
 
   <!-- ── Hero ────────────────────────────────────────────────── -->
-  <section class="mc-hero">
+  <section class="mc-hero" itemscope itemtype="https://schema.org/LegalService" style="background-image:url('images/brand/hero-team.jpg');background-size:cover;background-position:center;">
     <div class="mc-container">
       <div class="mc-hero__content">
         <p class="mc-hero__eyebrow">Trial Attorneys &bull; Three States</p>
-        <h1>We Fight for the<br>Seriously <span class="mc-gold">Injured</span></h1>
-        <p class="mc-hero__sub">Catastrophic injury, medical malpractice, and nursing home negligence litigation across Louisiana, Alabama, and Georgia. When everything is on the line, you need attorneys who take cases to trial.</p>
+        <h1 itemprop="name">We Fight for the<br>Seriously <span class="mc-gold">Injured</span></h1>
+        <p class="mc-hero__sub" itemprop="description">Catastrophic injury, medical malpractice, and nursing home negligence litigation across Louisiana, Alabama, and Georgia. When everything is on the line, you need attorneys who take cases to trial.</p>
         <div class="mc-hero__actions">
           <a href="contact/" class="mc-btn mc-btn--primary mc-btn--lg">Free Consultation</a>
-          <a href="tel:+15042693870" class="mc-btn mc-btn--ghost mc-btn--lg">Call 504-269-3870</a>
+          <a href="tel:+15042693870" class="mc-btn mc-btn--ghost mc-btn--lg" itemprop="telephone">Call 504-269-3870</a>
         </div>
         <div class="mc-hero__stats">
           <div>
@@ -173,24 +178,24 @@
   <!-- ── Trust Bar ───────────────────────────────────────────── -->
   <div class="mc-trust-bar" data-mc-reveal="fade-in">
     <div class="mc-trust-item">
-      <svg class="mc-icon mc-icon--lg"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
+      <img src="images/brand/badge-martindale.png" alt="Martindale-Hubbell 5.0 Rating" width="80" height="80" loading="lazy">
       <div class="mc-trust-item__number">5.0</div>
       <div class="mc-trust-item__label">Martindale Rating</div>
     </div>
     <div class="mc-trust-item">
-      <svg class="mc-icon mc-icon--lg"><use href="images/mc-icons.svg#mc-icon-badge-av"/></svg>
+      <img src="images/brand/award-badge-large.png" alt="AV Preeminent Rated by Martindale-Hubbell" width="80" height="80" loading="lazy">
       <div class="mc-trust-item__number">AV</div>
       <div class="mc-trust-item__label">Preeminent Rated</div>
     </div>
     <div class="mc-trust-item">
-      <svg class="mc-icon mc-icon--lg"><use href="images/mc-icons.svg#mc-icon-certificate"/></svg>
+      <img src="images/brand/badge-super-lawyers.png" alt="Super Lawyers" width="80" height="80" loading="lazy">
       <div class="mc-trust-item__number">Super Lawyers</div>
       <div class="mc-trust-item__label">Selected</div>
     </div>
     <div class="mc-trust-item">
-      <svg class="mc-icon mc-icon--lg"><use href="images/mc-icons.svg#mc-icon-map-pin"/></svg>
-      <div class="mc-trust-item__number">3</div>
-      <div class="mc-trust-item__label">State Coverage</div>
+      <img src="images/brand/badge-rising-stars.png" alt="Rising Stars" width="80" height="80" loading="lazy">
+      <div class="mc-trust-item__number">Rising Stars</div>
+      <div class="mc-trust-item__label">Named</div>
     </div>
   </div>
 
@@ -248,6 +253,13 @@
         <h2>Trial Attorneys Who Actually Try Cases</h2>
         <hr class="mc-divider--gold">
       </div>
+
+      <!-- Team photo with figure/figcaption -->
+      <figure class="mc-figure mc-text-center mc-mb-lg" data-mc-reveal="fade-up">
+        <img src="images/brand/office-team.jpg" alt="The Maples Connick legal team in their New Orleans office" width="960" height="540" loading="lazy">
+        <figcaption class="mc-figure__caption">The Maples &amp; Connick team at our New Orleans headquarters</figcaption>
+      </figure>
+
       <div class="mc-card-grid mc-card-grid--3">
         <div class="mc-card mc-card--dark" data-mc-reveal="fade-up">
           <h3>Courtroom Ready</h3>
@@ -255,7 +267,7 @@
         </div>
         <div class="mc-card mc-card--dark" data-mc-reveal="fade-up">
           <h3>Multi-State Reach</h3>
-          <p>With offices in New Orleans, Mobile, and Atlanta, we handle cases across Louisiana, Alabama, Georgia, Mississippi, and Tennessee. Different states, different laws — we know the distinctions that matter.</p>
+          <p>With offices in <a href="locations/new-orleans/">New Orleans</a>, <a href="locations/mobile/">Mobile</a>, and <a href="locations/atlanta/">Atlanta</a>, we handle cases across Louisiana, Alabama, Georgia, Mississippi, and Tennessee. Different states, different laws — we know the distinctions that matter.</p>
         </div>
         <div class="mc-card mc-card--dark" data-mc-reveal="fade-up">
           <h3>Focused Caseload</h3>
@@ -295,10 +307,7 @@
       <div class="mc-card-grid mc-card-grid--3">
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>AM</span>
-            </div>
+            <img src="images/attorneys/aaron-maples.jpg" alt="Aaron N. Maples, Personal Injury Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Aaron N. Maples</div>
           <div class="mc-attorney-card__title">Member &bull; AV Preeminent</div>
@@ -307,10 +316,7 @@
         </div>
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>BC</span>
-            </div>
+            <img src="images/attorneys/brendan-connick.jpg" alt="Brendan P. Connick, Personal Injury Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Brendan P. Connick</div>
           <div class="mc-attorney-card__title">Member</div>
@@ -319,10 +325,7 @@
         </div>
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>CP</span>
-            </div>
+            <img src="images/attorneys/chanel-payne.jpg" alt="Chanel Payne, Immigration and Personal Injury Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Chanel Payne</div>
           <div class="mc-attorney-card__title">Of Counsel &bull; Immigration</div>
@@ -331,10 +334,7 @@
         </div>
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>BF</span>
-            </div>
+            <img src="images/attorneys/byron-forrest.jpg" alt="Byron Forrest, Catastrophic Injury Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Byron Forrest</div>
           <div class="mc-attorney-card__title">Attorney</div>
@@ -343,10 +343,7 @@
         </div>
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>IB</span>
-            </div>
+            <img src="images/attorneys/ian-brendel.jpg" alt="Ian Brendel, Multi-State Personal Injury Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Ian Brendel</div>
           <div class="mc-attorney-card__title">Of Counsel &bull; 5 States</div>
@@ -355,10 +352,7 @@
         </div>
         <div class="mc-attorney-card" data-mc-reveal="fade-up">
           <div class="mc-attorney-card__photo">
-            <div class="mc-image-placeholder mc-image-placeholder--portrait">
-              <svg class="mc-icon"><use href="images/mc-icons.svg#mc-icon-users"/></svg>
-              <span>EH</span>
-            </div>
+            <img src="images/attorneys/eric-hamilton.jpg" alt="Eric Hamilton, Trial Attorney" width="120" height="120" loading="lazy">
           </div>
           <div class="mc-attorney-card__name">Eric Hamilton</div>
           <div class="mc-attorney-card__title">Attorney</div>
@@ -388,7 +382,7 @@
           </div>
           <div class="mc-process-step__content">
             <div class="mc-process-step__title">Free Consultation</div>
-            <div class="mc-process-step__desc">Call or fill out our form. We listen to your story, review the facts, and tell you honestly whether you have a case — at no cost to you.</div>
+            <div class="mc-process-step__desc">Call or fill out our <a href="contact/">contact form</a>. We listen to your story, review the facts, and tell you honestly whether you have a case — at no cost to you.</div>
           </div>
         </div>
         <div class="mc-process-step">
@@ -425,7 +419,7 @@
   </section>
 
   <!-- ── Offices ─────────────────────────────────────────────── -->
-  <section class="mc-section">
+  <section class="mc-section" itemscope itemtype="https://schema.org/LegalService">
     <div class="mc-container">
       <div class="mc-section-header" data-mc-reveal="fade-up">
         <p class="mc-eyebrow">Our Offices</p>
@@ -433,23 +427,33 @@
         <hr class="mc-divider--gold">
       </div>
       <div class="mc-card-grid mc-card-grid--3">
-        <div class="mc-office-card" data-mc-reveal="fade-up">
+        <div class="mc-office-card" data-mc-reveal="fade-up" itemprop="location" itemscope itemtype="https://schema.org/Place">
+          <img src="images/brand/offices/new-orleans-google.jpg" alt="Maples Connick New Orleans office on Dante Street" width="400" height="250" loading="lazy" itemprop="image">
           <div class="mc-office-card__state">Louisiana</div>
-          <div class="mc-office-card__city">New Orleans</div>
-          <address class="mc-office-card__address">733 Dante St, Ste. H<br>New Orleans, LA 70118</address>
-          <a href="tel:+15042693870" class="mc-office-card__phone">504-269-3870</a>
+          <div class="mc-office-card__city" itemprop="name">New Orleans</div>
+          <address class="mc-office-card__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">733 Dante St, Ste. H</span><br>
+            <span itemprop="addressLocality">New Orleans</span>, <span itemprop="addressRegion">LA</span> <span itemprop="postalCode">70118</span>
+          </address>
+          <a href="tel:+15042693870" class="mc-office-card__phone" itemprop="telephone">504-269-3870</a>
         </div>
-        <div class="mc-office-card" data-mc-reveal="fade-up">
+        <div class="mc-office-card" data-mc-reveal="fade-up" itemprop="location" itemscope itemtype="https://schema.org/Place">
           <div class="mc-office-card__state">Alabama</div>
-          <div class="mc-office-card__city">Mobile</div>
-          <address class="mc-office-card__address">P.O. Box 8765<br>Mobile, AL 36689</address>
-          <a href="tel:+15042693870" class="mc-office-card__phone">504-269-3870</a>
+          <div class="mc-office-card__city" itemprop="name">Mobile</div>
+          <address class="mc-office-card__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            P.O. Box <span itemprop="postOfficeBoxNumber">8765</span><br>
+            <span itemprop="addressLocality">Mobile</span>, <span itemprop="addressRegion">AL</span> <span itemprop="postalCode">36689</span>
+          </address>
+          <a href="tel:+15042693870" class="mc-office-card__phone" itemprop="telephone">504-269-3870</a>
         </div>
-        <div class="mc-office-card" data-mc-reveal="fade-up">
+        <div class="mc-office-card" data-mc-reveal="fade-up" itemprop="location" itemscope itemtype="https://schema.org/Place">
           <div class="mc-office-card__state">Georgia</div>
-          <div class="mc-office-card__city">Atlanta</div>
-          <address class="mc-office-card__address">3017 Bolling Way NE, Suite 5243<br>Atlanta, GA 30305</address>
-          <a href="tel:+15042693870" class="mc-office-card__phone">504-269-3870</a>
+          <div class="mc-office-card__city" itemprop="name">Atlanta</div>
+          <address class="mc-office-card__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">3017 Bolling Way NE, Suite 5243</span><br>
+            <span itemprop="addressLocality">Atlanta</span>, <span itemprop="addressRegion">GA</span> <span itemprop="postalCode">30305</span>
+          </address>
+          <a href="tel:+15042693870" class="mc-office-card__phone" itemprop="telephone">504-269-3870</a>
         </div>
       </div>
     </div>
@@ -464,7 +468,7 @@
         <hr class="mc-divider--gold">
       </div>
       <div class="mc-card-grid mc-card-grid--3">
-        <div class="mc-testimonial mc-testimonial--featured" data-mc-reveal="fade-up">
+        <blockquote class="mc-testimonial mc-testimonial--featured" data-mc-reveal="fade-up" cite="https://www.martindale.com/organization/maples-connick-llc-4947988/">
           <div class="mc-testimonial__stars">
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
@@ -473,10 +477,12 @@
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
           </div>
           <p class="mc-testimonial__text">Aaron and Brendan fought hard for my family when we needed it most. They were always available, always prepared, and they delivered results beyond what we expected.</p>
-          <div class="mc-testimonial__author">Martindale Review</div>
-          <div class="mc-testimonial__source">5.0 / 5.0</div>
-        </div>
-        <div class="mc-testimonial" data-mc-reveal="fade-up">
+          <footer class="mc-testimonial__footer">
+            <cite class="mc-testimonial__author">Martindale Review</cite>
+            <div class="mc-testimonial__source">5.0 / 5.0</div>
+          </footer>
+        </blockquote>
+        <blockquote class="mc-testimonial" data-mc-reveal="fade-up" cite="https://www.martindale.com/organization/maples-connick-llc-4947988/">
           <div class="mc-testimonial__stars">
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
@@ -485,10 +491,12 @@
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
           </div>
           <p class="mc-testimonial__text">From the first consultation to the final settlement, the team at Maples Connick treated my case like it was their own. Highly recommend to anyone dealing with a serious injury.</p>
-          <div class="mc-testimonial__author">Martindale Review</div>
-          <div class="mc-testimonial__source">5.0 / 5.0</div>
-        </div>
-        <div class="mc-testimonial" data-mc-reveal="fade-up">
+          <footer class="mc-testimonial__footer">
+            <cite class="mc-testimonial__author">Martindale Review</cite>
+            <div class="mc-testimonial__source">5.0 / 5.0</div>
+          </footer>
+        </blockquote>
+        <blockquote class="mc-testimonial" data-mc-reveal="fade-up" cite="https://www.martindale.com/organization/maples-connick-llc-4947988/">
           <div class="mc-testimonial__stars">
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
@@ -497,15 +505,20 @@
             <svg class="mc-icon mc-icon--sm"><use href="images/mc-icons.svg#mc-icon-star"/></svg>
           </div>
           <p class="mc-testimonial__text">Professional, responsive, and genuinely caring. They explained every step of the process and kept me informed throughout. I never felt like just another case number.</p>
-          <div class="mc-testimonial__author">Martindale Review</div>
-          <div class="mc-testimonial__source">5.0 / 5.0</div>
-        </div>
+          <footer class="mc-testimonial__footer">
+            <cite class="mc-testimonial__author">Martindale Review</cite>
+            <div class="mc-testimonial__source">5.0 / 5.0</div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="mc-text-center mc-mt-md" data-mc-reveal="fade-up">
+        <a href="our-results/" class="mc-btn mc-btn--dark">See Our Results</a>
       </div>
     </div>
   </section>
 
   <!-- ── CTA ─────────────────────────────────────────────────── -->
-  <section class="mc-cta-section">
+  <section class="mc-cta-section" style="background-image:url('images/brand/hero-bg-alt.jpg');background-size:cover;background-position:center;">
     <div class="mc-container" data-mc-reveal="fade-up">
       <h2>Ready to Talk About Your Case?</h2>
       <p>Consultations are free. You pay nothing unless we win.</p>
@@ -530,6 +543,7 @@
     <div class="mc-footer__grid">
       <div>
         <div class="mc-footer__heading">Maples &amp; Connick</div>
+        <img src="images/brand/logo-gold.png" alt="Maples &amp; Connick gold logo" width="160" height="36" loading="lazy" class="mc-footer__logo-img">
         <p class="mc-footer__desc">Personal injury, medical malpractice, nursing home negligence, and immigration attorneys serving Louisiana, Alabama, and Georgia.</p>
         <a href="tel:+15042693870" class="mc-footer__phone">504-269-3870</a>
         <div class="mc-social-row mc-mt-sm">

@@ -142,29 +142,30 @@
     <div class="mc-container">
       <div class="mc-card-grid mc-card-grid--2">
         <div data-mc-reveal="fade-up">
-          <div class="mc-office-card">
+          <div class="mc-office-card" itemscope itemtype="https://schema.org/LegalService">
+            <meta itemprop="name" content="Maples &amp; Connick - Mobile">
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-map-pin"/></svg>
               <div class="mc-office-card__state">Alabama</div>
             </div>
             <div class="mc-office-card__city">Mobile</div>
-            <address class="mc-office-card__address">P.O. Box 8765<br>Mobile, AL 36689</address>
+            <address class="mc-office-card__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">P.O. Box 8765</span><br><span itemprop="addressLocality">Mobile</span>, <span itemprop="addressRegion">AL</span> <span itemprop="postalCode">36689</span></address>
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-phone"/></svg>
-              <a href="tel:+15042693870" class="mc-office-card__phone">504-269-3870</a>
+              <a href="tel:+15042693870" class="mc-office-card__phone" itemprop="telephone">504-269-3870</a>
             </div>
             <div class="mc-office-card__icon-row">
               <svg class="mc-icon"><use href="../../images/mc-icons.svg#mc-icon-clock"/></svg>
+              <meta itemprop="openingHours" content="Mo-Fr 08:00-17:00">
               <span>Mon-Fri 9:00 AM - 5:00 PM</span>
             </div>
           </div>
         </div>
         <div data-mc-reveal="fade-up">
-          <!-- Replace with actual Google Maps embed using Place ID -->
-          <div class="mc-map-placeholder mc-map-placeholder--tall">
-            <svg class="mc-icon mc-icon--lg"><use href="../../images/mc-icons.svg#mc-icon-map-pin"/></svg>
-            <span>Google Maps: Mobile, AL 36689</span>
-          </div>
+          <figure class="mc-office-card__photo">
+            <img src="../../images/offices/office-interior.jpg" alt="Maples and Connick law office interior" width="600" height="400" loading="lazy">
+            <figcaption>Maples &amp; Connick office - serving Alabama's Gulf Coast</figcaption>
+          </figure>
           <p class="mc-mt-sm mc-text-center">
             <a href="https://maps.google.com/?q=Mobile+AL+36689" target="_blank" rel="noopener" class="mc-card__link">Get directions</a>
           </p>
