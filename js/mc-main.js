@@ -60,9 +60,12 @@
 
     if (overlay) overlay.addEventListener('click', closeNav);
 
-    // Close on nav link click (mobile)
+    // Close on nav link click (mobile) — exclude dropdown toggles and group titles
     nav.querySelectorAll('a').forEach((a) => {
-      a.addEventListener('click', closeNav);
+      a.addEventListener('click', () => {
+        if (a.classList.contains('mc-nav__dropdown-toggle') || a.classList.contains('mc-nav__group-title')) return;
+        closeNav();
+      });
     });
 
     // Close on Escape
@@ -70,12 +73,43 @@
       if (e.key === 'Escape') closeNav();
     });
 
-    // Mobile dropdown toggle
+    // Mobile dropdown toggle — close sibling dropdowns when opening one
     nav.querySelectorAll('.mc-nav__dropdown-toggle').forEach((toggle) => {
       toggle.addEventListener('click', (e) => {
         if (window.innerWidth <= 900) {
           e.preventDefault();
-          toggle.closest('.mc-nav__dropdown').classList.toggle('mc-nav__dropdown--open');
+          const parent = toggle.closest('.mc-nav__dropdown');
+          const wasOpen = parent.classList.contains('mc-nav__dropdown--open');
+          // Close all dropdowns first
+          nav.querySelectorAll('.mc-nav__dropdown--open').forEach((d) => {
+            d.classList.remove('mc-nav__dropdown--open');
+          });
+          if (!wasOpen) parent.classList.add('mc-nav__dropdown--open');
+        }
+      });
+    });
+
+    // Mobile accordion for grouped sub-menus
+    nav.querySelectorAll('.mc-nav__group-toggle').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (window.innerWidth > 900) return;
+        const group = btn.closest('.mc-nav__group');
+        const isOpen = group.classList.contains('mc-nav__group--open');
+        // Close all sibling groups
+        group.parentElement.querySelectorAll('.mc-nav__group--open').forEach((g) => {
+          g.classList.remove('mc-nav__group--open');
+          const t = g.querySelector('.mc-nav__group-toggle span');
+          if (t) t.textContent = '+';
+          const b = g.querySelector('.mc-nav__group-toggle');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          group.classList.add('mc-nav__group--open');
+          const s = btn.querySelector('span');
+          if (s) s.textContent = '\u2212';
+          btn.setAttribute('aria-expanded', 'true');
         }
       });
     });
