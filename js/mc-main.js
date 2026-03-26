@@ -37,7 +37,7 @@
     var els = document.querySelectorAll('[data-mc-reveal]');
     for (var i = 0; i < els.length; i++) {
       var el = els[i];
-      var delay = el.dataset.mcDelay || (el.closest('.mc-grid, .mc-card-grid') ? i * 80 : 0);
+      var delay = el.dataset.mcDelay || (el.closest('.mc-grid, .mc-card-grid') ? i * 40 : 0);
       el.style.transitionDelay = delay + 'ms';
       obs.observe(el);
     }

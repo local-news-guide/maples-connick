@@ -565,12 +565,12 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 }
 
 /* ── Scroll Reveal Animations ──────────────────────────────────── */
-[data-mc-reveal] { opacity: 0; transition: opacity 0.6s ease, transform 0.6s ease; }
-[data-mc-reveal="fade-up"] { transform: translateY(30px); }
-[data-mc-reveal="fade-left"] { transform: translateX(-30px); }
-[data-mc-reveal="fade-right"] { transform: translateX(30px); }
+[data-mc-reveal] { opacity: 0; transition: opacity 0.35s ease, transform 0.35s ease; }
+[data-mc-reveal="fade-up"] { transform: translateY(18px); }
+[data-mc-reveal="fade-left"] { transform: translateX(-18px); }
+[data-mc-reveal="fade-right"] { transform: translateX(18px); }
 [data-mc-reveal="fade-in"] { transform: none; }
-[data-mc-reveal="scale-in"] { transform: scale(0.95); }
+[data-mc-reveal="scale-in"] { transform: scale(0.97); }
 .mc-revealed { opacity: 1 !important; transform: none !important; }
 
 /* ── Scroll to Top ─────────────────────────────────────────────── */
