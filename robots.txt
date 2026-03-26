@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://maplesconnick.com/sitemap.xml

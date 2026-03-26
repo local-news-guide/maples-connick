@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1a3a5c" stroke-width="3"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#c4a44a" stroke-width="1.5"/>
+  <text x="100" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#1a3a5c" letter-spacing="1.5">MULTI-MILLION</text>
+  <text x="100" y="67" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#1a3a5c" letter-spacing="1.5">DOLLAR</text>
+  <line x1="50" y1="75" x2="150" y2="75" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#c4a44a">ADVOCATES</text>
+  <text x="100" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#c4a44a">FORUM</text>
+  <line x1="50" y1="128" x2="150" y2="128" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="148" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#1a3a5c" letter-spacing="1">LIFE MEMBER</text>
+  <text x="100" y="165" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#1a3a5c">Verdicts &amp; Settlements</text>
+  <text x="100" y="177" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#1a3a5c">Exceeding $1,000,000</text>
+</svg>

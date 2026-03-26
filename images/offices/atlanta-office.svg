@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <!-- Background gradient representing Atlanta skyline -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2A343F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  
+  <!-- Simplified skyline silhouette -->
+  <rect x="50" y="180" width="60" height="270" fill="#364250"/>
+  <rect x="120" y="140" width="50" height="310" fill="#3a4a5c"/>
+  <rect x="180" y="200" width="70" height="250" fill="#364250"/>
+  <rect x="260" y="100" width="55" height="350" fill="#3a4a5c"/>
+  <rect x="325" y="160" width="80" height="290" fill="#364250"/>
+  <rect x="415" y="80" width="60" height="370" fill="#3a4a5c"/>
+  <rect x="485" y="150" width="65" height="300" fill="#364250"/>
+  <rect x="560" y="120" width="50" height="330" fill="#3a4a5c"/>
+  <rect x="620" y="190" width="75" height="260" fill="#364250"/>
+  <rect x="705" y="160" width="55" height="290" fill="#3a4a5c"/>
+  
+  <!-- Building windows (dots of light) -->
+  <g fill="rgba(175,154,101,0.3)">
+    <rect x="270" y="120" width="4" height="4" rx="1"/>
+    <rect x="280" y="120" width="4" height="4" rx="1"/>
+    <rect x="270" y="130" width="4" height="4" rx="1"/>
+    <rect x="280" y="130" width="4" height="4" rx="1"/>
+    <rect x="425" y="100" width="4" height="4" rx="1"/>
+    <rect x="435" y="100" width="4" height="4" rx="1"/>
+    <rect x="445" y="100" width="4" height="4" rx="1"/>
+    <rect x="425" y="110" width="4" height="4" rx="1"/>
+    <rect x="435" y="110" width="4" height="4" rx="1"/>
+    <rect x="445" y="110" width="4" height="4" rx="1"/>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="400" y="340" text-anchor="middle" font-family="Marcellus,Georgia,serif" font-size="28" fill="#AF9A65" letter-spacing="3">MAPLES &amp; CONNICK</text>
+  <line x1="250" y1="355" x2="550" y2="355" stroke="#AF9A65" stroke-width="1" opacity="0.6"/>
+  <text x="400" y="380" text-anchor="middle" font-family="Heebo,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="2">ATLANTA, GEORGIA</text>
+  <text x="400" y="400" text-anchor="middle" font-family="Heebo,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">3017 Bolling Way NE, Suite 5243</text>
+</svg>

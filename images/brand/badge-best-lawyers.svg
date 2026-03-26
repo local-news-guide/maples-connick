@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1a3a5c" stroke-width="3"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#c4a44a" stroke-width="1.5"/>
+  <text x="100" y="65" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#1a3a5c" letter-spacing="3">BEST LAWYERS</text>
+  <text x="100" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#1a3a5c" letter-spacing="2">IN AMERICA</text>
+  <line x1="55" y1="90" x2="145" y2="90" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#c4a44a">ONES TO</text>
+  <text x="100" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#c4a44a">WATCH</text>
+  <line x1="55" y1="142" x2="145" y2="142" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#1a3a5c" letter-spacing="1">2021 — PRESENT</text>
+</svg>

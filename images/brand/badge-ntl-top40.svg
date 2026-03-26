@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#8b0000" stroke-width="3"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#c4a44a" stroke-width="1.5"/>
+  <text x="100" y="55" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#8b0000" letter-spacing="2">THE NATIONAL</text>
+  <text x="100" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#8b0000" letter-spacing="2">TRIAL LAWYERS</text>
+  <line x1="50" y1="78" x2="150" y2="78" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#c4a44a">TOP 40</text>
+  <text x="100" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#8b0000">UNDER 40</text>
+  <line x1="50" y1="140" x2="150" y2="140" stroke="#c4a44a" stroke-width="1"/>
+  <text x="100" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#8b0000" letter-spacing="1">ALABAMA</text>
+</svg>
