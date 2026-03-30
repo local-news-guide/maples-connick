@@ -715,22 +715,24 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
 /* ── Attorney card featured ────────────────────────────────────── */
 .mc-attorney-card--featured { border: 2px solid var(--mc-gold); }
 
-/* Attorney hero (bio page) — split layout */
-.mc-hero--page { background: linear-gradient(135deg, var(--mc-slate-dark) 0%, var(--mc-slate) 100%); padding: 140px 0 60px; color: var(--mc-white); }
-.mc-attorney-hero { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: center; }
+/* Attorney hero (bio page) — split layout with lead */
+.mc-hero--page { background: linear-gradient(135deg, var(--mc-slate-dark) 0%, var(--mc-slate) 100%); padding: 140px 0 72px; color: var(--mc-white); }
+.mc-attorney-hero { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: center; }
 .mc-attorney-hero__info { margin-top: 0; }
 .mc-attorney-hero h1 { font-size: clamp(32px, 5vw, 48px); color: var(--mc-white); margin-bottom: 8px; }
-.mc-attorney-hero__title { font-size: 16px; color: var(--mc-gold); font-weight: 500; margin-bottom: 16px; }
-.mc-attorney-hero__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-.mc-attorney-hero__stat { display: flex; align-items: baseline; gap: 12px; margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.12); }
+.mc-attorney-hero__title { font-size: 16px; color: var(--mc-gold); font-weight: 500; margin-bottom: 12px; }
+.mc-attorney-hero__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.mc-attorney-hero__lead { font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.75); margin-top: 20px; font-weight: 300; }
+.mc-attorney-hero__stat { display: flex; align-items: baseline; gap: 12px; margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
 .mc-attorney-hero__stat-number { font-family: var(--mc-font-heading); font-size: 36px; color: var(--mc-gold); line-height: 1; }
-.mc-attorney-hero__stat-label { font-size: 14px; color: rgba(255,255,255,0.6); }
+.mc-attorney-hero__stat-label { font-size: 14px; color: rgba(255,255,255,0.5); }
 .mc-attorney-hero__photo-col { display: flex; justify-content: center; }
 .mc-attorney-photo-lg { width: 280px; height: 280px; }
 @media (max-width: 768px) {
-  .mc-attorney-hero { grid-template-columns: 1fr; text-align: center; gap: 32px; }
+  .mc-attorney-hero { grid-template-columns: 1fr; text-align: center; gap: 28px; }
   .mc-attorney-hero__tags { justify-content: center; }
   .mc-attorney-hero__stat { justify-content: center; }
+  .mc-attorney-hero__lead { text-align: left; }
   .mc-attorney-hero__photo-col { order: -1; }
   .mc-attorney-photo-lg { width: 200px; height: 200px; }
 }
