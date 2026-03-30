@@ -737,6 +737,21 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   .mc-attorney-photo-lg { width: 200px; height: 200px; }
 }
 
+/* Attorney bio content — structured layout */
+.mc-bio { padding: 64px 0; }
+.mc-bio__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.mc-bio__grid h3 { font-size: 20px; color: var(--mc-slate); margin-bottom: 12px; margin-top: 0; }
+.mc-bio__grid h3:not(:first-child) { margin-top: 32px; }
+.mc-bio__grid p { font-size: 16px; line-height: 1.85; color: var(--mc-gray-600); margin-bottom: 16px; }
+.mc-bio__grid figure { margin: 0; border-radius: var(--mc-radius-lg); overflow: hidden; }
+.mc-bio__grid figure img { width: 100%; height: auto; display: block; }
+.mc-bio__grid figcaption { font-size: 13px; color: var(--mc-gray-400); margin-top: 10px; font-style: italic; padding: 0 4px; }
+.mc-bio__sidebar { position: sticky; top: 100px; }
+@media (max-width: 768px) {
+  .mc-bio__grid { grid-template-columns: 1fr; gap: 32px; }
+  .mc-bio__sidebar { position: static; }
+}
+
 /* Service page hero with background image */
 .mc-page-hero.mc-hero--with-bg { padding: 160px 0 80px; min-height: 400px; }
 .mc-page-hero.mc-hero--with-bg h1 { font-size: clamp(36px, 5.5vw, 56px); }
