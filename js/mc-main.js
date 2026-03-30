@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  /* ── Progressive enhancement flag ───────────────────────── */
+  document.documentElement.classList.add('mc-js');
+
   /* ── Shared scroll state (single listener, RAF-throttled) ─── */
   var scrollY = 0, lastScrollY = 0, ticking = false;
   var scrollCallbacks = [];

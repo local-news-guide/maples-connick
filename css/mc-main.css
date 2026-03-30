@@ -564,13 +564,15 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 400; 
   .mc-footer__bottom { flex-direction: column; text-align: center; }
 }
 
-/* ── Scroll Reveal Animations ──────────────────────────────────── */
-[data-mc-reveal] { opacity: 0; transition: opacity 0.35s ease, transform 0.35s ease; }
-[data-mc-reveal="fade-up"] { transform: translateY(18px); }
-[data-mc-reveal="fade-left"] { transform: translateX(-18px); }
-[data-mc-reveal="fade-right"] { transform: translateX(18px); }
-[data-mc-reveal="fade-in"] { transform: none; }
-[data-mc-reveal="scale-in"] { transform: scale(0.97); }
+/* ── Scroll Reveal Animations (Progressive Enhancement) ───────── */
+/* Base: content visible. JS adds .mc-js to <html> to enable animations. */
+[data-mc-reveal] { transition: opacity 0.35s ease, transform 0.35s ease; }
+.mc-js [data-mc-reveal] { opacity: 0; }
+.mc-js [data-mc-reveal="fade-up"] { transform: translateY(18px); }
+.mc-js [data-mc-reveal="fade-left"] { transform: translateX(-18px); }
+.mc-js [data-mc-reveal="fade-right"] { transform: translateX(18px); }
+.mc-js [data-mc-reveal="fade-in"] { transform: none; }
+.mc-js [data-mc-reveal="scale-in"] { transform: scale(0.97); }
 .mc-revealed { opacity: 1 !important; transform: none !important; }
 
 /* ── Scroll to Top ─────────────────────────────────────────────── */
