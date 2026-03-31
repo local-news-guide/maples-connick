@@ -40,8 +40,10 @@
     var els = document.querySelectorAll('[data-mc-reveal]');
     for (var i = 0; i < els.length; i++) {
       var el = els[i];
-      var delay = el.dataset.mcDelay || (el.closest('.mc-grid, .mc-card-grid') ? i * 40 : 0);
-      el.style.transitionDelay = delay + 'ms';
+      // CSS handles stagger via nth-child for card grids; only apply manual delay if data-mc-delay is set
+      if (el.dataset.mcDelay) {
+        el.style.transitionDelay = el.dataset.mcDelay + 'ms';
+      }
       obs.observe(el);
     }
   }
