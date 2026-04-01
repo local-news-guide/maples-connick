@@ -1127,6 +1127,7 @@ figure.mc-content-image figcaption { font-size: 13px; color: var(--mc-gray-500);
 .mc-split__text h2 { margin-bottom: var(--mc-space-md); }
 .mc-split__text p { margin-bottom: var(--mc-space-md); color: var(--mc-gray-600); line-height: 1.7; }
 .mc-split__text p:last-child { margin-bottom: 0; }
+.mc-split__text .mc-pullquote { font-size: clamp(20px, 2.5vw, 26px); margin: var(--mc-space-xl) 0; padding-left: var(--mc-space-md); }
 .mc-split__media { position: relative; overflow: hidden; border-radius: var(--mc-radius-lg); }
 .mc-split__media img {
   width: 100%; height: auto; display: block;
@@ -1370,6 +1371,79 @@ img.mc-card__thumb {
 .mc-video--framed {
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* ── Attorney Card (service page sidebar) ─────────────────────── */
+.mc-attorney-card {
+  position: sticky;
+  top: 100px;
+  background: var(--mc-white);
+  border: 1px solid var(--mc-gray-200);
+  border-radius: var(--mc-radius-lg);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+.mc-attorney-card__photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.mc-attorney-card__body {
+  padding: var(--mc-space-lg) var(--mc-space-md) var(--mc-space-md);
+}
+.mc-attorney-card__body .mc-eyebrow {
+  margin-bottom: var(--mc-space-xs);
+}
+.mc-attorney-card__name {
+  font-family: var(--mc-font-heading);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 600;
+  color: var(--mc-slate);
+  margin: 0 0 4px;
+}
+.mc-attorney-card__title {
+  font-family: var(--mc-font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--mc-gold);
+  margin: 0 0 var(--mc-space-sm);
+  letter-spacing: 0.02em;
+}
+.mc-attorney-card__credential {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--mc-gray-600);
+  margin: 0 0 var(--mc-space-md);
+}
+.mc-attorney-card__badges {
+  display: flex;
+  justify-content: center;
+  gap: var(--mc-space-sm);
+  margin-bottom: var(--mc-space-md);
+}
+.mc-attorney-card__badges img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: var(--mc-radius-sm);
+  background: var(--mc-cream);
+  padding: 6px;
+}
+.mc-attorney-card .mc-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--mc-space-xs);
+}
+.mc-attorney-card .mc-btn:last-child { margin-bottom: 0; }
+@media (max-width: 768px) {
+  .mc-attorney-card {
+    position: static;
+    max-width: 360px;
+    margin: 0 auto;
+  }
 }
 
 /* ── Print Stylesheet ──────────────────────────────────────────── */
