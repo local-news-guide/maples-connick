@@ -1390,6 +1390,7 @@ img.mc-card__thumb {
   display: block;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: top;
 }
 .mc-attorney-card__body {
   padding: var(--mc-space-lg) var(--mc-space-md) var(--mc-space-md);
