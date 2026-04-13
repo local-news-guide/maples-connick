@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 500; 
 .mc-nav__dropdown:focus-within .mc-nav__dropdown-menu { display: block; }
 .mc-nav__dropdown:hover .mc-nav__dropdown-toggle .mc-icon { transform: rotate(180deg); }
 .mc-nav__dropdown-menu a {
-  display: block; padding: 7px 20px; font-size: 13.5px;
+  display: block; padding: 7px 20px; font-size: 14.5px;
   color: var(--mc-gray-600); border-radius: 0; border-bottom: none;
   transition: color 0.2s, background 0.2s;
 }
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 500; 
 .mc-nav__group:hover > .mc-nav__group-items { display: block; }
 .mc-nav__group-items a {
   padding: 8px 20px !important;
-  font-size: 13.5px !important;
+  font-size: 14.5px !important;
   color: var(--mc-gray-600) !important;
 }
 .mc-nav__group-items a:hover { color: var(--mc-slate) !important; background: var(--mc-gold-light) !important; }
@@ -595,38 +595,6 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 500; 
 .mc-footer__legal { display: flex; gap: 20px; }
 .mc-footer__legal a { font-size: 13px; color: rgba(255,255,255,0.4); }
 .mc-footer__legal a:hover { color: var(--mc-gold); }
-.mc-footer__disclaimer {
-  max-width: 1200px; margin: 0 auto 32px; padding: 0 20px;
-  font-size: 12px; line-height: 1.7; color: rgba(255,255,255,0.35);
-  border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
-}
-.mc-footer__disclaimer a { display: inline; font-size: 12px; color: rgba(255,255,255,0.45); text-decoration: underline; }
-.mc-footer__disclaimer a:hover { color: var(--mc-gold); }
-.mc-footer__disclaimer strong { color: rgba(255,255,255,0.5); }
-
-/* ── FAQ Accordion ────────────────────────────────────────────── */
-.mc-faq { margin-bottom: 0; }
-.mc-faq__item {
-  border-bottom: 1px solid var(--mc-gray-200); padding: 0;
-}
-.mc-faq__item[open] { padding-bottom: 16px; }
-.mc-faq__question {
-  font-family: var(--mc-font-body); font-size: 18px; font-weight: 600;
-  color: var(--mc-slate); cursor: pointer; padding: 20px 0;
-  list-style: none; display: flex; justify-content: space-between; align-items: center;
-}
-.mc-faq__question::-webkit-details-marker { display: none; }
-.mc-faq__question::after {
-  content: '+'; font-size: 24px; font-weight: 300; color: var(--mc-gold);
-  flex-shrink: 0; margin-left: 16px; transition: transform 0.2s;
-}
-.mc-faq__item[open] .mc-faq__question::after { content: '\2212'; }
-.mc-faq__answer { padding: 0 0 4px; }
-.mc-faq__answer p {
-  font-size: 16px; line-height: 1.75; color: var(--mc-slate-light); margin: 0;
-}
-.mc-faq__answer a { color: var(--mc-gold-text); text-decoration: underline; }
-.mc-faq__answer a:hover { color: var(--mc-gold-hover); }
 
 @media (max-width: 900px) { .mc-footer__grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) {
@@ -1127,7 +1095,6 @@ figure.mc-content-image figcaption { font-size: 13px; color: var(--mc-gray-500);
 .mc-split__text h2 { margin-bottom: var(--mc-space-md); }
 .mc-split__text p { margin-bottom: var(--mc-space-md); color: var(--mc-gray-600); line-height: 1.7; }
 .mc-split__text p:last-child { margin-bottom: 0; }
-.mc-split__text .mc-pullquote { font-size: clamp(20px, 2.5vw, 26px); margin: var(--mc-space-xl) 0; padding-left: var(--mc-space-md); }
 .mc-split__media { position: relative; overflow: hidden; border-radius: var(--mc-radius-lg); }
 .mc-split__media img {
   width: 100%; height: auto; display: block;
@@ -1371,135 +1338,6 @@ img.mc-card__thumb {
 .mc-video--framed {
   max-width: 900px;
   margin: 0 auto;
-}
-
-/* ── Attorney Card (service page sidebar) ─────────────────────── */
-.mc-attorney-card {
-  position: sticky;
-  top: 100px;
-  background: var(--mc-white);
-  border: 1px solid var(--mc-gray-200);
-  border-radius: var(--mc-radius-lg);
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-}
-.mc-attorney-card__photo {
-  width: 100%;
-  height: auto;
-  display: block;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: top;
-}
-.mc-attorney-card__body {
-  padding: var(--mc-space-lg) var(--mc-space-md) var(--mc-space-md);
-}
-.mc-attorney-card__body .mc-eyebrow {
-  margin-bottom: var(--mc-space-xs);
-}
-.mc-attorney-card__name {
-  font-family: var(--mc-font-heading);
-  font-size: clamp(1.15rem, 2vw, 1.35rem);
-  font-weight: 600;
-  color: var(--mc-slate);
-  margin: 0 0 4px;
-}
-.mc-attorney-card__title {
-  font-family: var(--mc-font-body);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--mc-gold);
-  margin: 0 0 var(--mc-space-sm);
-  letter-spacing: 0.02em;
-}
-.mc-attorney-card__credential {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--mc-gray-600);
-  margin: 0 0 var(--mc-space-md);
-}
-.mc-attorney-card__badges {
-  display: flex;
-  justify-content: center;
-  gap: var(--mc-space-sm);
-  margin-bottom: var(--mc-space-md);
-}
-.mc-attorney-card__badges img {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-  border-radius: var(--mc-radius-sm);
-  background: var(--mc-cream);
-  padding: 6px;
-}
-.mc-attorney-card .mc-btn {
-  display: block;
-  width: 100%;
-  margin-bottom: var(--mc-space-xs);
-}
-.mc-attorney-card .mc-btn:last-child { margin-bottom: 0; }
-@media (max-width: 768px) {
-  .mc-attorney-card {
-    position: static;
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
-
-/* ── Team Block (index pages) ─────────────────────────────────── */
-.mc-team-block {
-  background: var(--mc-cream);
-  border-radius: var(--mc-radius);
-  padding: var(--mc-space-lg);
-  text-align: center;
-}
-.mc-team-block .mc-eyebrow { margin-bottom: var(--mc-space-xs); }
-.mc-team-block h3 {
-  font-family: var(--mc-font-heading);
-  font-size: 24px;
-  color: var(--mc-slate);
-  margin-bottom: var(--mc-space-md);
-}
-.mc-team-block__grid {
-  display: flex;
-  justify-content: center;
-  gap: var(--mc-space-lg);
-  flex-wrap: wrap;
-  margin-bottom: var(--mc-space-md);
-}
-.mc-team-block__member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.2s;
-  max-width: 160px;
-}
-.mc-team-block__member:hover { transform: translateY(-3px); }
-.mc-team-block__photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 20%;
-  margin-bottom: var(--mc-space-xs);
-  border: 3px solid var(--mc-gold);
-}
-.mc-team-block__name {
-  font-family: var(--mc-font-heading);
-  font-size: 16px;
-  color: var(--mc-slate);
-  margin-bottom: 2px;
-}
-.mc-team-block__title {
-  font-size: 12px;
-  color: var(--mc-gold-text);
-  font-weight: 500;
-}
-@media (max-width: 480px) {
-  .mc-team-block__grid { gap: var(--mc-space-sm); }
-  .mc-team-block__photo { width: 80px; height: 80px; }
 }
 
 /* ── Print Stylesheet ──────────────────────────────────────────── */
