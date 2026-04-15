@@ -1037,7 +1037,10 @@ div.mc-attorney-photo-lg {
 .mc-attorney-photo-lg[src*="eric-hamilton"] { object-position: center 15%; }
 .mc-attorney-card__photo img[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]),
 .mc-attorney-card__photo-img[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]),
-.mc-attorney-photo-lg[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]) { object-position: 55% 20%; }
+.mc-attorney-photo-lg[src*="aaron-maples"][src$=".jpg"]:not([src*="action"]) { object-position: 55% 5%; }
+.mc-attorney-card__photo img[src*="brendan-connick"][src$=".jpg"],
+.mc-attorney-card__photo-img[src*="brendan-connick"][src$=".jpg"],
+.mc-attorney-photo-lg[src*="brendan-connick"][src$=".jpg"] { object-position: center 5%; }
 
 /* ── Team Group Photo ───────────────────────────────────────────── */
 .mc-figure--wide img { max-height: 500px; object-fit: contain; }
