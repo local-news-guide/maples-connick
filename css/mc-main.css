@@ -890,7 +890,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 500; 
 .mc-cta-section.mc-hero--with-bg { background: transparent; }
 .mc-cta-section.mc-hero--with-bg::before { display: none; }
 .mc-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; z-index: 0; }
-.mc-hero.mc-hero--with-bg .mc-hero__bg { object-position: center 35%; }
+.mc-hero.mc-hero--with-bg .mc-hero__bg { object-position: center top; }
 .mc-hero--with-bg::after { content: ''; position: absolute; inset: 0; background: rgba(42,52,63,0.85); z-index: 1; }
 .mc-hero--with-bg > *:not(.mc-hero__bg) { position: relative; z-index: 2; }
 
