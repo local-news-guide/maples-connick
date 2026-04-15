@@ -890,6 +890,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--mc-font-heading); font-weight: 500; 
 .mc-cta-section.mc-hero--with-bg { background: transparent; }
 .mc-cta-section.mc-hero--with-bg::before { display: none; }
 .mc-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; z-index: 0; }
+.mc-hero.mc-hero--with-bg .mc-hero__bg { object-position: center 35%; }
 .mc-hero--with-bg::after { content: ''; position: absolute; inset: 0; background: rgba(42,52,63,0.85); z-index: 1; }
 .mc-hero--with-bg > *:not(.mc-hero__bg) { position: relative; z-index: 2; }
 
@@ -1020,6 +1021,14 @@ div.mc-attorney-photo-lg {
 .mc-attorney-card__photo img[src*="chanel-payne"],
 .mc-attorney-card__photo-img[src*="chanel-payne"],
 .mc-attorney-photo-lg[src*="chanel-payne"] { object-position: center 10%; }
+
+/* Aaron and Brendan heads were cropping at the top — show more of the top */
+.mc-attorney-card__photo img[src*="aaron-maples"],
+.mc-attorney-card__photo-img[src*="aaron-maples"],
+.mc-attorney-photo-lg[src*="aaron-maples"],
+.mc-attorney-card__photo img[src*="brendan-connick"],
+.mc-attorney-card__photo-img[src*="brendan-connick"],
+.mc-attorney-photo-lg[src*="brendan-connick"] { object-position: center 8%; }
 .mc-attorney-card__photo img[src*="byron-forrest"],
 .mc-attorney-card__photo-img[src*="byron-forrest"],
 .mc-attorney-photo-lg[src*="byron-forrest"] { object-position: 60% 15%; }
